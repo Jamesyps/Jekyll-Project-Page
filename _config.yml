@@ -4,7 +4,7 @@ author:      James Wigger
 description: "A short introduction of your project, this will be displayed in the meta description and the main banner area."
 baseurl:     ""
 url:         "http://username.github.io/project"
-hero_image: "/images/default.png"
+hero_image: "/images/default.jpg"
 
 # Google analytics
 google_analytics:

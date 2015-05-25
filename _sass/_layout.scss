@@ -64,6 +64,7 @@ body {
 }
 
 .project-summary {
+    margin-top: 10px;
     margin-bottom: 50px;
     font-size: 1.6em;
     line-height: 1.6em;
@@ -128,10 +129,10 @@ body {
 // Page content
 .page-navigation {
     float: left;
-    width: 30%;
+    width: 25%;
 
     .page-navigation-title {
-        margin: 0;
+        margin: 0 0 20px;
         padding: 0;
 
         font-size: 2.4em;
@@ -147,9 +148,13 @@ body {
         list-style: none;
     }
 
+    li {
+        margin-bottom: 5px;
+    }
+
     a {
         font-size: 1.6em;
-        line-height: 3em;
+        line-height: 1.8em;
         text-decoration: none;
         color: $copy-colour;
 
@@ -162,5 +167,91 @@ body {
 .page-sections {
     float: left;
     margin-left: 5%;
-    width: 65%;
+    width: 70%;
+
+    .section {
+        margin-bottom: 40px;
+        border-top: 1px solid darken($body-colour, 5%);
+        padding-top: 40px;
+
+        &:first-child {
+            border-top: 0;
+            padding-top: 0;
+        }
+    }
+
+    .section-title h1 {
+        margin: 0 0 20px;
+        padding: 0;
+
+        font-size: 2.4em;
+        line-height: 1em;
+        font-weight: 700;
+
+        color: $header-colour;
+    }
+
+    .section-content {
+        font-size: 1.6em;
+        line-height: 1.6em;
+        color: $copy-colour;
+
+        a {
+            color: $copy-colour;
+            text-decoration: underline;
+
+            &:hover {
+                color: $header-colour;
+            }
+        }
+    }
+}
+
+blockquote {
+    margin: 30px 0;
+    border-left: 8px solid $secondary-colour;
+    padding: 15px 25px 15px;
+}
+
+table {
+    margin: 30px 0;
+    empty-cells: show;
+
+    thead {
+        background-color: $secondary-colour;
+        vertical-align: bottom;
+        text-align: left;
+        color: #FFF;
+    }
+
+    th,
+    td {
+        margin: 0;
+        padding: 0.5em 1em;
+        overflow: visible;
+        font-size: inherit;
+    }
+
+    tr {
+        td {
+            background-color: transparent;
+        }
+
+        &:nth-child(even) td {
+            background-color: mix(#FFF, $secondary-colour, 90%);
+        }
+    }
+
+    tfoot td {
+        background-color: mix(#FFF, $secondary-colour, 80%);
+        font-style: italic;
+    }
+}
+
+p {
+    margin: 30px 0 0;
+
+    &:first-child {
+        margin-top: 0;
+    }
 }

@@ -15,6 +15,7 @@ url: "http://username.github.io/project"
 # Theme Settings
 hero_image: "images/default.jpg"
 homepage: "http://yoursite.com"
+download_link: "#"
 
 
 # Build settings

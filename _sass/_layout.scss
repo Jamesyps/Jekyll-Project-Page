@@ -85,13 +85,13 @@ body {
     border-radius: 2px;
 
     background: $secondary-colour;
-    background: -moz-linear-gradient(-45deg,  $secondary-colour 0%, $secondary-colour-dark 100%);
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,$secondary-colour), color-stop(100%,$secondary-colour-dark));
-    background: -webkit-linear-gradient(-45deg,  $secondary-colour 0%,$secondary-colour-dark 100%);
-    background: -o-linear-gradient(-45deg,  $secondary-colour 0%,$secondary-colour-dark 100%);
-    background: -ms-linear-gradient(-45deg,  $secondary-colour 0%,$secondary-colour-dark 100%);
-    background: linear-gradient(135deg,  $secondary-colour 0%,$secondary-colour-dark 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$secondary-colour}', endColorstr='#{$secondary-colour-dark}',GradientType=1 );
+    background: -moz-linear-gradient(top,  $secondary-colour 0%, $secondary-colour-dark 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$secondary-colour), color-stop(100%,$secondary-colour-dark));
+    background: -webkit-linear-gradient(top,  $secondary-colour 0%,$secondary-colour-dark 100%);
+    background: -o-linear-gradient(top,  $secondary-colour 0%,$secondary-colour-dark 100%);
+    background: -ms-linear-gradient(top,  $secondary-colour 0%,$secondary-colour-dark 100%);
+    background: linear-gradient(to bottom,  $secondary-colour 0%,$secondary-colour-dark 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$secondary-colour', endColorstr='$secondary-colour-dark',GradientType=0 );
 
     letter-spacing: 1px;
 
@@ -109,7 +109,7 @@ body {
 }
 
 .project-hero {
-    margin: -230px auto 0;
+    margin: -240px auto 0;
     overflow: hidden;
 
     border-radius: 3px;

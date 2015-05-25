@@ -70,8 +70,18 @@ body {
     font-weight: 500;
 }
 
-.project-download {
+%btn {
     display: inline-block;
+    padding: 10px 40px;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #FFF;
+}
+
+.project-download {
+    @extend %btn;
+
     border-radius: 2px;
 
     background: $secondary-colour;
@@ -83,14 +93,7 @@ body {
     background: linear-gradient(135deg,  $secondary-colour 0%,$secondary-colour-dark 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$secondary-colour}', endColorstr='#{$secondary-colour-dark}',GradientType=1 );
 
-    padding: 10px 40px;
-
-    text-decoration: none;
-    font-size: 1.8em;
-    font-weight: 500;
     letter-spacing: 1px;
-
-    color: #FFF;
 
     &:hover {
         background: $secondary-colour-dark;
@@ -98,12 +101,7 @@ body {
 }
 
 .project-src {
-    display: inline-block;
-    padding: 10px 40px;
-    text-decoration: none;
-    font-size: 1.8em;
-    font-weight: 500;
-    color: #FFF;
+    @extend %btn;
 
     &:hover {
         text-decoration: underline;

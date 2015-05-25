@@ -156,6 +156,18 @@ body {
     }
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+       only screen and (min--moz-device-pixel-ratio: 1.3),
+       only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333),
+       only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+
+    .project-hero {
+        background-image: url('../images/browser-frame@2x.png');
+        background-size: 990px 31px;
+    }
+}
+
+
 // Page content
 .page-navigation {
     float: left;
@@ -253,51 +265,6 @@ body {
     .page-sections {
         margin-top: 30px;
     }
-}
-
-blockquote {
-    margin: 30px 0;
-    border-left: 8px solid $secondary-colour;
-    padding: 15px 25px 15px;
-}
-
-table {
-    margin: 30px 0;
-    empty-cells: show;
-
-    thead {
-        background-color: $secondary-colour;
-        vertical-align: bottom;
-        text-align: left;
-        color: #FFF;
-    }
-
-    th,
-    td {
-        margin: 0;
-        padding: 0.5em 1em;
-        overflow: visible;
-        font-size: inherit;
-    }
-
-    tr {
-        td {
-            background-color: transparent;
-        }
-
-        &:nth-child(even) td {
-            background-color: mix(#FFF, $secondary-colour, 90%);
-        }
-    }
-
-    tfoot td {
-        background-color: mix(#FFF, $secondary-colour, 80%);
-        font-style: italic;
-    }
-}
-
-p {
-    margin: 0 0 30px;
 }
 
 // footer

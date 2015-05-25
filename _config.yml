@@ -1,11 +1,11 @@
 # Site settings
-title:       Project Title
+title:       Project Page
 author:      James Wigger
 description: "A short introduction of your project, this will be displayed in the meta description and the main banner area."
 baseurl:     ""
-url:         "http://username.github.io/project"
+url:         "http://jamesyps.github.io/Jekyll-Project-Page"
 hero_image: "/images/default.jpg"
-homepage: "http://yoursite.com"
+homepage: "http://jameswigger.co.uk"
 
 # Google analytics
 google_analytics:

@@ -110,6 +110,28 @@ body {
     }
 }
 
+@media all and (max-width: 720px) {
+    .project-meta {
+        width: 100%;
+    }
+
+    .project-title {
+        font-size: 4em;
+    }
+
+    .project-download,
+    .project-src {
+        display: block;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+
+    .project-src {
+        margin-top: 20px;
+    }
+}
+
 .project-hero {
     margin: -240px auto 50px;
     overflow: hidden;
@@ -119,11 +141,18 @@ body {
     background: url('../images/browser-frame.png') no-repeat top left;
 
     padding-top: 31px;
-    width: 990px;
+    max-width: 990px;
+    width: 90%;
 
     img {
         display: block;
         width: 100%;
+    }
+}
+
+@media all and (max-width: 720px) {
+    .project-hero {
+        margin-top: -260px;
     }
 }
 
@@ -210,6 +239,19 @@ body {
                 color: $header-colour;
             }
         }
+    }
+}
+
+@media all and (max-width: 720px) {
+    .page-navigation,
+    .page-sections {
+        float: none;
+        margin: 0;
+        width: auto;
+    }
+
+    .page-sections {
+        margin-top: 30px;
     }
 }
 

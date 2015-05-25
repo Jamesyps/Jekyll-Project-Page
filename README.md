@@ -1,6 +1,8 @@
 # Jekyll-Project-Page
 A Jekyll template for individual projects using Github Pages.
 
+[View Demo](http://jamesyps.github.io/Jekyll-Project-Page/)
+
 ### Create the pages branch
 Github has a [guide here](https://help.github.com/articles/creating-project-pages-manually/) for manually setting up a new project page.
 

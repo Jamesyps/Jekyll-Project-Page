@@ -5,6 +5,7 @@ description: "A short introduction of your project, this will be displayed in th
 baseurl:     ""
 url:         "http://username.github.io/project"
 hero_image: "/images/default.jpg"
+homepage: "http://yoursite.com"
 
 # Google analytics
 google_analytics:

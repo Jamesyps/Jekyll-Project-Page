@@ -109,7 +109,7 @@ body {
 }
 
 .project-hero {
-    margin: -240px auto 0;
+    margin: -240px auto 50px;
     overflow: hidden;
 
     border-radius: 3px;
@@ -129,6 +129,34 @@ body {
 .page-navigation {
     float: left;
     width: 30%;
+
+    .page-navigation-title {
+        margin: 0;
+        padding: 0;
+
+        font-size: 2.4em;
+        line-height: 1em;
+        font-weight: 700;
+
+        color: $header-colour;
+    }
+
+    .section-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    a {
+        font-size: 1.6em;
+        line-height: 3em;
+        text-decoration: none;
+        color: $copy-colour;
+
+        &:hover {
+            color: $header-colour;
+        }
+    }
 }
 
 .page-sections {

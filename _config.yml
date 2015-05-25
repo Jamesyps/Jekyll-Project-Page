@@ -1,0 +1,20 @@
+# Site settings
+title:       Project Title
+author:      James Wigger
+description: "A short introduction of your project, this will be displayed in the <head> section and the main banner area."
+baseurl:     ""
+url:         "http://username.github.io/project"
+
+# Google analytics
+google_analytics:
+
+# Build settings
+markdown:     redcarpet
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+permalink:    pretty
+sass:
+  style: :compressed
+  compressed: true
+gems:
+  - jekyll-sitemap

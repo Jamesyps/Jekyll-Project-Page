@@ -1,7 +1,7 @@
 # Site settings
 title:       Project Title
 author:      James Wigger
-description: "A short introduction of your project, this will be displayed in the <head> section and the main banner area."
+description: "A short introduction of your project, this will be displayed in the meta description and the main banner area."
 baseurl:     ""
 url:         "http://username.github.io/project"
 hero_image: "/images/default.png"

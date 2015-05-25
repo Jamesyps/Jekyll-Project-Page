@@ -6,7 +6,7 @@
             <p class="project-summary">{{ site.description }}</p>
 
             <div class="button-row">
-                <a class="project-download" href="{{ site.github.zip_url }}">Download</a>
+                <a class="project-download" href="{{ site.github.repository_url }}/zipball/master">Download</a>
                 <a class="project-src" href="{{ site.github.repository_url }}">View on Github</a>
             </div>
         </div>
@@ -15,5 +15,5 @@
 </header>
 
 <div class="project-hero">
-    <img src="{{ site.hero_image }}" alt="{{ site.title }}" />
+    <img src="{{ site.hero_image | prepend: site.url }}" alt="{{ site.title }}" />
 </div>

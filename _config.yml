@@ -15,7 +15,7 @@ url: "http://jamesyps.github.io/Jekyll-Project-Page"
 # Theme Settings
 hero_image: "images/default.jpg"
 homepage: "http://jameswigger.co.uk"
-
+download_link: "https://github.com/Jamesyps/Jekyll-Project-Page/archive/master.zip"
 
 # Build settings
 markdown: redcarpet

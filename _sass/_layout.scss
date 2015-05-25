@@ -156,6 +156,18 @@ body {
     }
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+       only screen and (min--moz-device-pixel-ratio: 1.3),
+       only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333),
+       only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+
+    .project-hero {
+        background-image: url('../images/browser-frame@2x.png');
+        background-size: 990px 31px;
+    }
+}
+
+
 // Page content
 .page-navigation {
     float: left;

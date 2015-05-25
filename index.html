@@ -1,23 +1,28 @@
 ---
 layout: default
 ---
+<div class="page-navigation">
+    <h2 class="page-navigation__title">
+        Contents
+    </h2>
+    <ul class="section-list">
+        {% for post in site.posts %}
+        <li>
+            <a href="#{{ post.title | slugify }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
+<div class="page-sections">
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+    <article id="{{ post.title | slugify }}" class="section">
+        <header class="section-titl">
+            <h1>{{ post.title }}</h1>
+        </header>
+        <div class="section-content">
+            {{ post.content }}
+        </div>
+    </article>
     {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
 </div>
